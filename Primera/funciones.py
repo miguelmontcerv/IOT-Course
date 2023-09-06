@@ -1,5 +1,6 @@
-def resta(a, b):
-    return a - b
+def dividir(divisor, dividendo):
+    cociente = dividendo / divisor
+    return cociente
 
-resultado = resta(3, 5)
+resultado = dividir(3, 5)
 print(resultado)
