@@ -8,7 +8,7 @@ peliculas = ["Spider Man", "Harry Potter", "Kunf fu panda"]
 
 # Definir una ruta para la API que maneja las solicitudes GET y POST
 @app.route('/movies', methods=['GET', 'POST'])
-def get_movies():
+def movies():
     name = request.args.get('name')
 
     if request.method == 'GET':
@@ -39,7 +39,7 @@ def get_movies():
                 response = make_response(response_data, 201)
             else:
                 response_data = f'No se brindó información de la pelicula a agregar'
-                 # Crear una respuesta HTTP personalizada con el código de estado 202
+                 # Crear una respuesta HTTP personalizada con el código de estado 400
                 response = make_response(response_data, 400)
         else:
             # Si no se proporciona un nombre, responder con la lista de películas completa
