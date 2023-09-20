@@ -1,10 +1,8 @@
-import logging
-
 from azure.functions import HttpRequest, HttpResponse
 
-def main(req: HttpRequest) -> HttpResponse:
-    peliculas = ["Spider Man", "Harry Potter", "Kunf fu panda"]
+peliculas = ["Spider Man", "Harry Potter", "Kunf fu panda"]
 
+def main(req: HttpRequest) -> HttpResponse:
     # Obtenemos el nombre de los parametros
     name = req.params.get('name')
     if name == "Juan":
