@@ -1,6 +1,4 @@
 def dividir(divisor, dividendo):
-    cociente = dividendo / divisor
-    return cociente
+    return dividendo / divisor
 
-resultado = dividir(3, 5)
-print(resultado)
+print(dividir(3, 5))

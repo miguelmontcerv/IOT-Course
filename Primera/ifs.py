@@ -1,4 +1,4 @@
-edad = 21
+edad = 18
 
 if edad >= 21:
     print("Eres mayor de edad en USA")

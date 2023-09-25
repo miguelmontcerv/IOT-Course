@@ -1,2 +1,4 @@
-mi_diccionario = {"nombre": "Juan", "edad": 30}
-print(mi_diccionario["nombre"])
+mi_diccionario = {"lapiz": "Objeto para escribir", 
+"Goma": "objeto para borrar"}
+
+print(mi_diccionario["lapiz"])

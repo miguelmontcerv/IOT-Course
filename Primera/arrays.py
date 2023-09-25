@@ -1,3 +1,3 @@
-mi_lista = [1, 2, 3, 4, 5]
+mi_lista = ['hola', 5, 'clase', 23]
 for elemento in mi_lista:
     print(elemento)
